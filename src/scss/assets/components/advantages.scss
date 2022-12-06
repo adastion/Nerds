@@ -1,0 +1,25 @@
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 30px 130px;
+  padding: 5rem 0;
+  border-bottom: 3px solid $gallery;
+
+  & li {
+    display: grid;
+    justify-items: start;
+    gap: 2.2rem;
+  }
+
+  &__img {
+    width: 300px;
+    aspect-ratio: 16/7.7;
+    background: $pickled_bluewood_text;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}

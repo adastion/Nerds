@@ -1,0 +1,53 @@
+.btn {
+  display: flex;
+  border: none;
+  outline: none;
+  background: $carnation;
+  color: $white;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1em 3.396em;
+  border-radius: 3px;
+
+  &:active {
+    color: darken($white, 15%);
+  }
+  
+  &--red {
+    background: $carnation;
+    
+    &:hover,
+    &:focus-within {
+      background: darken($carnation, 9%);
+    }
+
+    &:active {
+      box-shadow: inset 0 2px darken($carnation, 25px);
+    }
+  }
+  
+  &--green {
+    background: $caribbean_green;
+    
+    &:hover,
+    &:focus-within {
+      background: darken($caribbean_green, 9%);
+    }
+    &:active {
+      box-shadow: inset 0 2px darken($caribbean_green, 25px);
+    }
+  }
+  
+  &--yellow {
+    background: $ronchi;
+    
+    &:hover,
+    &:focus-within {
+      background: darken($ronchi, 9%);
+    }
+    &:active {
+      box-shadow: inset 0 2px darken($ronchi, 25px);
+    }
+  }
+}

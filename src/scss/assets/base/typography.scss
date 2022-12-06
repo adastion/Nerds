@@ -1,0 +1,39 @@
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Roboto';
+
+  src: url('../fonts/roboto-regular/roboto.woff2') format('woff2');
+  src: url('../fonts/roboto-regular/roboto.eot') format('embedded-opentype'),
+    url('../fonts/roboto-regular/roboto.otf') format('otf'),
+    url('../fonts/roboto-regular/roboto.svg') format('svg'),
+    url('../fonts/roboto-regular/roboto.ttf') format('truetype'),
+    url('../fonts/roboto-regular/roboto.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Roboto';
+
+  src: url('../fonts/roboto-medium/robotomedium.woff2') format('woff2');
+  src: url('../fonts/roboto-medium/robotomedium.eot') format('embedded-opentype'),
+    url('../fonts/roboto-medium/robotomedium.otf') format('otf'),
+    url('../fonts/roboto-medium/robotomedium.svg') format('svg'),
+    url('../fonts/roboto-medium/robotomedium.ttf') format('truetype'),
+    url('../fonts/roboto-medium/robotomedium.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Roboto';
+
+  src: url('../fonts/roboto-bold/robotobold.woff2') format('woff2');
+  src: url('../fonts/roboto-bold/robotobold.eot') format('embedded-opentype'),
+    url('../fonts/roboto-bold/robotobold.otf') format('otf'),
+    url('../fonts/roboto-bold/robotobold.svg') format('svg'),
+    url('../fonts/roboto-bold/robotobold.ttf') format('truetype'),
+    url('../fonts/roboto-bold/robotobold.woff') format('woff');
+}
+

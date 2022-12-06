@@ -1,0 +1,26 @@
+.header {
+  background: $gallery;
+  margin: 0 -8.75em;
+  padding: 0 8.75em;
+  padding-top: 3.0625em;
+  
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    position: relative;
+    top: -0.625em;
+
+    &:hover,
+    &:focus-within {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

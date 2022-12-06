@@ -1,0 +1,20 @@
+// Colors
+// Color names - http://chir.ag/projects/name-that-color/
+// Calc( (100vw - Vmin)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin);
+
+$black: #000000;
+$white: #ffffff;
+$pickled_bluewood_text: #283136;
+$gallery: #eeeeee;
+$carnation: #fb565a;
+$caribbean_green: #00ca74;
+$ronchi: #efc849;
+$tundora: #4d4d4d;
+$silver: #c1c1c1;
+
+// Body
+$base-text-color: $pickled_bluewood_text;
+$secondary-text-color: $black;
+
+// Headings
+$base-headings-color: $black;
