@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
   gap: 30px 130px;
-  padding: 5rem 0;
-  border-bottom: 3px solid $gallery;
 
   & li {
     display: grid;

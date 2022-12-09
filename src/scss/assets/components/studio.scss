@@ -1,0 +1,61 @@
+.studio {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 132px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text {
+    margin-bottom: 2.5em;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $black;
+    margin-bottom: 2.5em;
+  }
+
+  &__list-orders {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    & li {
+      position: relative;
+      margin-left: 2.125em;
+
+      &::before {
+        content: '';
+        width: 1.5em;
+        height: 0.125em;
+        background: $carnation;
+        position: absolute;
+        top: 50%;
+        left: -2.125em;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__secondary-logo {
+    max-width: 360px;
+    aspect-ratio: 16/9;
+    margin-bottom: 2.25em;
+  }
+
+  &__list-offer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__procent {
+    font-size: 45px;
+    font-weight: 600;
+    color: $black;
+  }
+}

@@ -25,11 +25,16 @@ h3 {
   font-size: 2.1875rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: $base-headings-color;
+  line-height: 1em;
+  margin-bottom: 0.4em;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 500;
 }
 
