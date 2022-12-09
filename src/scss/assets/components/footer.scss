@@ -1,0 +1,40 @@
+.footer {
+  padding: 4.375rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem 8.625rem;
+
+		&__social {
+      display: flex;
+      gap: 0.75rem;
+		}
+
+		&__item {
+		}
+
+		&__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background: $silver;
+		}
+
+		&__icon {
+      width: 1.625rem;
+      height: 1.375rem;
+      fill: $white;
+		}
+
+		&__message {
+      flex-grow: 1;
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+}
