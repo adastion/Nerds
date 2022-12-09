@@ -1,0 +1,40 @@
+.logotypes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 1.5rem 0;
+
+  &__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -0.0625rem;
+        width: 0.125rem;
+        height: 3.25rem;
+        background: $gallery;
+      }
+    }
+  }
+
+  &__link {
+    opacity: 0.2;
+
+    &:hover,
+    &:focus-within {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}

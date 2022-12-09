@@ -1,12 +1,16 @@
 .studio {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 132px;
+  gap: 8.25rem;
 
   &__block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &--baseline {
+      justify-content: flex-start;
+    }
   }
 
   &__text {
@@ -24,7 +28,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    
+
     & li {
       position: relative;
       margin-left: 2.125em;
@@ -51,11 +55,19 @@
   &__list-offer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em;
   }
 
   &__procent {
     font-size: 45px;
     font-weight: 600;
     color: $black;
+    position: relative;
+
+    & span {
+      position: absolute;
+      top: 0.2em;
+      font-size: 0.5em;
+    }
   }
 }
