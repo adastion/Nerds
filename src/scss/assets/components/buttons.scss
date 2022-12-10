@@ -2,7 +2,6 @@
   display: flex;
   border: none;
   outline: none;
-  background: $carnation;
   color: $white;
   cursor: pointer;
   font-weight: 500;
@@ -13,41 +12,42 @@
   &:active {
     color: darken($white, 15%);
   }
-  
+
   &--red {
-    background: $carnation;
-    
+    background: lighten($carnation, 1%);
+
     &:hover,
     &:focus-within {
       background: darken($carnation, 9%);
     }
 
     &:active {
-      box-shadow: inset 0 2px darken($carnation, 25px);
+      box-shadow: inset 0 2px 3px darken($carnation, 16%);
     }
   }
-  
+
   &--green {
     background: $caribbean_green;
-    
+
     &:hover,
     &:focus-within {
       background: darken($caribbean_green, 9%);
     }
     &:active {
-      box-shadow: inset 0 2px darken($caribbean_green, 25px);
+      box-shadow: inset 0 2px 3px darken($caribbean_green, 16%);
     }
   }
-  
+
   &--yellow {
     background: $ronchi;
-    
+
     &:hover,
     &:focus-within {
       background: darken($ronchi, 9%);
     }
+    
     &:active {
-      box-shadow: inset 0 2px darken($ronchi, 25px);
+      box-shadow: inset 0 2px 3px darken($ronchi, 16%);
     }
   }
 }

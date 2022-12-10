@@ -4,37 +4,52 @@
   align-items: center;
   gap: 1.5rem 8.625rem;
 
-		&__social {
-      display: flex;
-      gap: 0.75rem;
-		}
+  &__social {
+    display: flex;
+    gap: 0.75rem;
+  }
 
-		&__item {
-		}
+  &__item {
+  }
 
-		&__link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 5rem;
-      height: 5rem;
-      border-radius: 50%;
-      background: $silver;
-		}
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: $silver;
+    transition: all 0.5s ease-in-out;
 
-		&__icon {
-      width: 1.625rem;
-      height: 1.375rem;
-      fill: $white;
-		}
+    &:hover,
+    &:focus-within {
+      background: $carnation;
+    }
 
-		&__message {
-      flex-grow: 1;
-		}
+    &:active {
+      background: darken($carnation, 8%);
+      box-shadow: inset 0 2px 3px darken($carnation, 20%);
 
-		&__title {
-		}
+      & .footer__icon {
+        opacity: 0.4;
+      }
+    }
+  }
 
-		&__subtitle {
-		}
+  &__icon {
+    width: 1.625rem;
+    height: 1.375rem;
+    fill: $white;
+  }
+
+  &__message {
+    flex-grow: 1;
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
 }
