@@ -1,13 +1,45 @@
 .header {
   background: $gallery;
-  margin: 0 -8.75em;
-  padding: 0 8.75em;
-  padding-top: 3.0625em;
+  margin: 0 -1em;
+  padding: 0 1em;
+  
+  @include tablet-and-bigger {
+    margin: 0 -2.75em;
+    padding: 0 2.75em;
+    padding-top: 3.0625em;
+  }
+  
+  @include desktop-and-bigger {
+    margin: 0 -3.75em;
+    padding: 0 3.75em;
+    padding-top: 3.0625em;
+  }
+  
+  @include big-desktop-and-bigger {
+    margin: 0 -4.75em;
+    padding: 0 4.75em;
+    padding-top: 3.0625em;
+  }
+  
+  @include pading-desktop-and-bigger {
+    margin: 0 -8.75em;
+    padding: 0 8.75em;
+    padding-top: 3.0625em;
+  }
   
   &__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    @include desktop-and-bigger {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+    }
   }
 
   &__logo {

@@ -2,8 +2,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@mixin sort-pading-desktop-and-bigger {
-  @media (min-width: 1250px) {
+@mixin pading-desktop-and-bigger {
+  @media (min-width: 1200px) {
     @content;
   }
 }

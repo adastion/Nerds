@@ -26,7 +26,11 @@
   }
 
   & li {
-    padding-bottom: 0.3125em;
+    padding-bottom: 0;
+
+    @include desktop-and-bigger {
+      padding-bottom: 0.3125em;
+    }
 
     &.active {
       border-bottom: 2px solid $carnation;

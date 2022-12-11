@@ -4,32 +4,55 @@
 
   &__list {
     display: flex;
-    width: 300%;
     transition: margin-left 0.8s ease-in-out;
+    width: 300%;
+
+    @include big-desktop-and-bigger {
+    }
   }
 
   &__slide {
     width: 100%;
-    height: 413px;
     display: grid;
-    grid-template-columns: 1fr 1.624fr;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    gap: 1em 0;
+
+    @include big-desktop-and-bigger {
+      height: 413px;
+      grid-template-columns: 1fr 1.624fr;
+    }
   }
 
   &__info {
     display: grid;
-    justify-items: start;
+    justify-items: center;
+
+    @include big-desktop-and-bigger {
+      justify-items: start;
+    }
   }
 
   &__title {
-    width: 120%;
+    width: 100%;
     height: 2em;
-  }
+    text-align: center;
 
+    @include big-desktop-and-bigger {
+      width: 120%;
+      text-align: start;
+    }
+  }
+  
   &__text {
     margin-bottom: 2.625em;
     height: 2.4em;
+    text-align: center;
+
+    @include big-desktop-and-bigger {
+      text-align: start;
+    }
   }
 
   &__img {
@@ -38,6 +61,10 @@
     align-items: center;
     height: 100%;
     overflow: hidden;
+
+    @include big-desktop-and-bigger {
+      justify-content: flex-end;
+    }
 
     & img {
       max-height: 100%;
