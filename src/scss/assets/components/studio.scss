@@ -1,12 +1,28 @@
 .studio {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 8.25rem;
+  justify-content: center;
+  gap: 3.25rem;
+
+  @include desktop-and-bigger {
+    grid-template-columns: 2fr 1fr;
+    gap: 8.25rem;
+  }
 
   &__block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    @include desktop-and-bigger {
+      align-items: flex-start;
+
+      & h2,
+      & p {
+        text-align: start;
+      }
+    }
 
     &--baseline {
       justify-content: flex-start;

@@ -1,22 +1,22 @@
 .container {
   max-width: 1440px;
   width: 100%;
-  padding: 0 1em;
+  padding: 0 1rem;
   margin: 0 auto;
 
   @include tablet-and-bigger {
-    padding: 0 2.75em;
+    padding: 0 2.75rem;
   }
 
   @include desktop-and-bigger {
-    padding: 0 3.75em;
+    padding: 0 3.75rem;
   }
-  
+
   @include big-desktop-and-bigger {
-    padding: 0 4.75em;
+    padding: 0 4.75rem;
   }
 
   @include pading-desktop-and-bigger {
-    padding: 0 8.75em;
+    padding: 0 8.75rem;
   }
 }

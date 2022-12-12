@@ -1,6 +1,11 @@
 .navigation {
   display: flex;
   gap: 3rem;
+  display: none;
+
+  @include tablet-and-bigger {
+    display: flex;
+  }
 
   &__link {
     font-weight: 500;

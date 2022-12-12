@@ -1,7 +1,38 @@
 .contacts {
   position: relative;
-  margin: 0 -8.75rem;
+  margin: 0 -1rem;
   margin-top: 5rem;
+
+  @include tablet-and-bigger {
+    margin: 5rem -2.75rem 0;
+  }
+
+  @include desktop-and-bigger {
+    margin: 5rem -3.75rem 0;
+  }
+
+  @include big-desktop-and-bigger {
+    margin: 5rem -4.75rem 0;
+  }
+
+  @include pading-desktop-and-bigger {
+    margin: 5rem -8.75rem 0;
+  }
+
+  &__menu {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    @include desktop-and-bigger {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  }
 
   & p,
   & a {
@@ -17,15 +48,25 @@
   &__write-us {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    left: 8.75rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 319px;
     background: $white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 2em;
-    padding: 3.125rem;
+    padding: 1.125rem;
+
+    @include tablet-and-bigger {
+      left: 0;
+      left: 8.75rem;
+      transform: translateY(-50%);
+      padding: 3.125rem;
+      align-items: flex-start;
+      text-align: start;
+    }
   }
 
   &__title {
@@ -33,9 +74,6 @@
     font-weight: 600;
     text-transform: uppercase;
     color: $black;
-  }
-
-  &__adress {
   }
 
   &__tel {
