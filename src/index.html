@@ -12,8 +12,28 @@
 
 <body>
   <div class="container">
-    <div class="modal-writeus">
-      
+    <div class="modal">
+      <div class="modal__content writeus">
+        <div class="modal__close"></div>
+        <h2>Напишите нам</h2>
+        <form action="/">
+          <ul class="writeus__list">
+            <li>
+              <label for="userName" class="writeus__subtitle">Ваше имя:</label>
+              <input id="userName" type="text" class="writeus__input" placeholder="Имя Фамилия">
+            </li>
+            <li>
+              <label for="userEmail" class="writeus__subtitle">Ваш e-mail:</label>
+              <input id="userEmail" type="email" class="writeus__input" placeholder="email@example.com">
+            </li>
+            <li>
+              <label for="textMessage" class="writeus__subtitle">Текст письма:</label>
+              <textarea id="textMessage" class="writeus__input writeus__textarea" placeholder="В свободной форме"></textarea>
+            </li>
+          </ul>
+          <button class="btn btn--red writeus__btn">ОТПРАВИТЬ</button>
+        </form>
+      </div>
     </div>
     <header>
       <div class="header">

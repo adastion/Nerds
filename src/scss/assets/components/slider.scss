@@ -37,11 +37,11 @@
     text-align: center;
     z-index: 5;
     font-size: 2.4375rem;
-    font-size: Calc((100vw - 320px) / (1440 - 320) * (55 - 45) + 45px);
 
     @include big-desktop-and-bigger {
       width: 150%;
       text-align: start;
+      font-size: Calc((100vw - 320px) / (1440 - 320) * (55 - 45) + 45px);
     }
   }
 

@@ -1,0 +1,68 @@
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+
+  &__content {
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $white;
+    box-shadow: 0 20px 40px 4px $black;
+    padding: 2.25rem 2.25rem;
+
+    @include tablet-and-bigger {
+      padding: 5.25rem 6.25rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 2.25rem;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+
+    @include tablet-and-bigger {
+      top: 5.25rem;
+      right: 6.25rem;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background: $carnation;
+    }
+
+    &:active::before,
+    &:active::after {
+      background: lighten($carnation, 25%);
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 3px;
+      height: 25px;
+      background: lighten($carnation, 10%);
+      transition: background 0.3s ease-in-out;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
