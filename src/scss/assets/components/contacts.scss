@@ -50,7 +50,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 319px;
+    max-width: 320px;
+    width: 95%;
     background: $white;
     display: flex;
     flex-direction: column;
@@ -60,6 +61,7 @@
     padding: 1.125rem;
 
     @include tablet-and-bigger {
+      width: 100%;
       left: 0;
       left: 8.75rem;
       transform: translateY(-50%);
