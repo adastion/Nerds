@@ -10,15 +10,16 @@
   &__content {
     display: grid;
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background: $white;
     box-shadow: 0 20px 40px 4px $black;
     padding: 2.25rem 2.25rem;
 
     @include tablet-and-bigger {
       padding: 5.25rem 6.25rem;
+      top: 75%;
     }
   }
 
@@ -64,5 +65,9 @@
     &::after {
       transform: translate(-50%, -50%) rotate(-45deg);
     }
+  }
+
+  &.show {
+    display: block;
   }
 }
