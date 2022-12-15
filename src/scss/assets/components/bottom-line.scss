@@ -1,4 +1,8 @@
 .bottom-line {
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   border-bottom: 3px solid $gallery;
+
+  @include tablet-and-bigger {
+    padding: 5rem 0;
+  }
 }

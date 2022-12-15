@@ -1,21 +1,38 @@
 .advantages {
-  display: grid;
-  justify-content: center;
-  gap: 4rem;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4rem 1rem;
+
   @include tablet-and-bigger {
-    grid-template-columns: repeat(auto-fit, 300px);
-    gap: 30px 130px;
+    text-align: start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop-and-bigger {
+    justify-content: space-between;
   }
 
   & li {
     display: grid;
     justify-items: center;
     gap: 2.2rem;
+
+    @include tablet-and-bigger {
+      max-width: 300px;
+      justify-items: start;
+    }
+
+    & p {
+      max-width: 300px;
+    }
   }
 
   &__img {
-    width: 300px;
+    max-width: 300px;
     aspect-ratio: 16/7.7;
     background: $pickled_bluewood_text;
   }

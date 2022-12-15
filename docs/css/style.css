@@ -523,7 +523,7 @@ h2 {
 @media (min-width: 768px) {
   .modal__content {
     padding: 5.25rem 6.25rem;
-    top: 75%;
+    top: 68%;
   }
 }
 .modal__close {
@@ -620,8 +620,13 @@ h2 {
 }
 
 .bottom-line {
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   border-bottom: 3px solid #eeeeee;
+}
+@media (min-width: 768px) {
+  .bottom-line {
+    padding: 5rem 0;
+  }
 }
 
 .header {
@@ -943,17 +948,37 @@ h2 {
 }
 
 .advantages {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 4rem 1rem;
 }
 @media (min-width: 768px) {
   .advantages {
-    grid-template-columns: repeat(auto-fit, 300px);
-    gap: 30px 130px;
+    text-align: start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
+  .advantages {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .advantages li {
@@ -962,8 +987,17 @@ h2 {
   justify-items: center;
   gap: 2.2rem;
 }
+@media (min-width: 768px) {
+  .advantages li {
+    max-width: 300px;
+    justify-items: start;
+  }
+}
+.advantages li p {
+  max-width: 300px;
+}
 .advantages__img {
-  width: 300px;
+  max-width: 300px;
   aspect-ratio: 16/7.7;
   background: #283136;
 }
@@ -1017,6 +1051,7 @@ h2 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    text-align: start;
   }
   .studio__block h2, .studio__block p {
     text-align: start;

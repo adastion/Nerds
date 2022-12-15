@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="shortcut icon" href="images/svg/favicon.svg">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Catalog</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="modal">
+      <div class="modal__content writeus">
+        <div class="modal__close"></div>
+        <h2>Напишите нам</h2>
+        <form action="/">
+          <ul class="writeus__list">
+            <li>
+              <label for="userName" class="writeus__subtitle">Ваше имя:</label>
+              <input id="userName" type="text" class="writeus__input" placeholder="Имя Фамилия">
+            </li>
+            <li>
+              <label for="userEmail" class="writeus__subtitle">Ваш e-mail:</label>
+              <input id="userEmail" type="email" class="writeus__input" placeholder="email@example.com">
+            </li>
+            <li>
+              <label for="textMessage" class="writeus__subtitle">Текст письма:</label>
+              <textarea id="textMessage" class="writeus__input writeus__textarea"
+                placeholder="В свободной форме"></textarea>
+            </li>
+          </ul>
+          <button class="btn btn--red writeus__btn">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </div>
+    <header>
+      <div class="header">
+        <h1 class="headeer__title">Магазин готовых шаблонов</h1>
+        <nav class="header__menu">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="images/svg/nerds-logo.svg" alt="logo">
+            </a>
+          </div>
+          <button class="btn header__btn-menu">Меню</button>
+          <ul class="navigation">
+            <li>
+              <a href="#" class="navigation__link">Студия</a>
+            </li>
+            <li>
+              <a href="#" class="navigation__link">Клиенты</a>
+            </li>
+            <li class="active">
+              <a href="#" class="navigation__link">Магазин</a>
+            </li>
+            <li>
+              <a href="#" class="navigation__link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="navigation">
+            <li>
+              <svg class="navigation__icon">
+                <use xlink:href="images/sprite.svg#cart-icon"></use>
+              </svg>
+              <a href="#" class="navigation__link">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="contacts">
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1670698614246!5m2!1sru!2sby"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="contacts__write-us">
+          <h4 class="contacts__title">NЁRDS DESIGN STUDIO</h4>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts__tel">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <button class="btn btn--red contacts__btn">Напишите нам</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <ul class="footer__social">
+          <li>
+            <a href="#" class="footer__link">
+              <svg class="footer__icon">
+                <use xlink:href="images/sprite.svg#vk-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">
+              <svg class="footer__icon">
+                <use xlink:href="images/sprite.svg#fb-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">
+              <svg class="footer__icon">
+                <use xlink:href="images/sprite.svg#insta-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__message">
+          <h3>Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
