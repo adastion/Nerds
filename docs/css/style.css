@@ -715,6 +715,12 @@ h2 {
 .header__btn-menu:hover, .header__btn-menu:focus-within {
   background: #c1c1c1;
 }
+.header__title {
+  font-size: calc((100vw - 320px) / 1120 * 20 + 35px);
+  text-align: center;
+  padding-top: 1.2em;
+  padding-bottom: 1.8em;
+}
 
 .navigation {
   display: -webkit-box;
