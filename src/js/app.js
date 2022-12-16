@@ -25,3 +25,6 @@ btnClose.addEventListener('click', (e) => {
   e.preventDefault();
   modalWriteUs.classList.remove('show');
 });
+
+// pointer on the googlle map
+
