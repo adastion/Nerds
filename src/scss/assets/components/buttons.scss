@@ -1,5 +1,7 @@
 .btn {
   display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   outline: none;
   color: $white;
@@ -11,6 +13,21 @@
 
   &:active {
     color: darken($white, 15%);
+  }
+
+  &--gray {
+    background: lighten($silver, 15%);
+    color: $black;
+
+    &:hover,
+    &:focus-within {
+      background: lighten($silver, 10%);
+    }
+
+    &:active {
+      box-shadow: inset 0 2px 3px darken($silver, 16%);
+      color: darken($silver, 16%);
+    }
   }
 
   &--red {
@@ -45,7 +62,7 @@
     &:focus-within {
       background: darken($ronchi, 9%);
     }
-    
+
     &:active {
       box-shadow: inset 0 2px 3px darken($ronchi, 16%);
     }

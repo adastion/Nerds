@@ -82,16 +82,16 @@
               <h3 class="filter__title">Сетка:</h3>
               <ul class="filter__sublist">
                 <li>
-                  <input id="adaptive" type="radio" name="grid" checked>
-                  <label for="adaptive" class="filter__text">Адаптивная</label>
+                  <input id="adaptive" class="filter__input visually-hidden" type="radio" name="grid" checked>
+                  <label for="adaptive" class="filter__radio">Адаптивная</label>
                 </li>
                 <li>
-                  <input id="fixed" type="radio" name="grid">
-                  <label for="fixed" class="filter__text">Фиксированная</label>
+                  <input id="fixed" class="filter__input visually-hidden" type="radio" name="grid">
+                  <label for="fixed" class="filter__radio">Фиксированная</label>
                 </li>
                 <li>
-                  <input id="responsive" type="radio" name="grid">
-                  <label for="responsive" class="filter__text">Резиновая</label>
+                  <input id="responsive" class="filter__input visually-hidden" type="radio" name="grid">
+                  <label for="responsive" class="filter__radio">Резиновая</label>
                 </li>
               </ul>
             </li>
@@ -99,29 +99,29 @@
               <h3 class="filter__title">ОСОБЕННОСТИ:</h3>
               <ul class="filter__sublist">
                 <li>
-                  <input id="slider" type="checkbox" checked>
-                  <label for="slider" class="filter__text">Слайдер</label>
+                  <input id="slider" class="filter__input visually-hidden" type="checkbox" checked>
+                  <label for="slider" class="filter__checkbox">Слайдер</label>
                 </li>
                 <li>
-                  <input id="blockOfAdvantages" type="checkbox">
-                  <label for="blockOfAdvantages" class="filter__text">Блок преимуществ</label>
+                  <input id="blockOfAdvantages" class="filter__input visually-hidden" type="checkbox">
+                  <label for="blockOfAdvantages" class="filter__checkbox">Блок преимуществ</label>
                 </li>
                 <li>
-                  <input id="news" type="checkbox" checked>
-                  <label for="news" class="filter__text">Новости</label>
+                  <input id="news" class="filter__input visually-hidden" type="checkbox" checked>
+                  <label for="news" class="filter__checkbox">Новости</label>
                 </li>
                 <li>
-                  <input id="gallery" type="checkbox">
-                  <label for="gallery" class="filter__text">Галерея</label>
+                  <input id="gallery" class="filter__input visually-hidden" type="checkbox">
+                  <label for="gallery" class="filter__checkbox">Галерея</label>
                 </li>
                 <li>
-                  <input id="cart" type="checkbox">
-                  <label for="cart" class="filter__text">Корзина</label>
+                  <input id="cart" class="filter__input visually-hidden" type="checkbox">
+                  <label for="cart" class="filter__checkbox">Корзина</label>
                 </li>
               </ul>
             </li>
           </ul>
-          <button class="filter__btn">ПОКАЗАТЬ</button>
+          <button class="btn btn--gray">ПОКАЗАТЬ</button>
         </form>
         <div class="page-content__wrap">
           <div class="sort">
@@ -131,28 +131,34 @@
               <input id="sort2" type="radio" class="visually-hidden" name="sorting">
               <input id="sort3" type="radio" class="visually-hidden" name="sorting">
               <li>
-                <label for="sort1">По цене</label>
+                <label for="sort1" class="sort__btn">По цене</label>
               </li>
               <li>
-                <label for="sort1">По типу</label>
+                <label for="sort2" class="sort__btn">По типу</label>
               </li>
               <li>
-                <label for="sort1">По названию</label>
+                <label for="sort3" class="sort__btn">По названию</label>
               </li>
-              <li>
-                <svg class="sort__icon">
-                  <use xlink:href="images/sprite.svg#icon-up-dir"></use>
-                </svg>
-                <svg class="sort__icon">
-                  <use xlink:href="images/sprite.svg#icon-down-dir"></use>
-                </svg>
+              <li class="sort__icons-wrap">
+                <input id="arrowUp" type="radio" class="visually-hidden" name="moreLess" checked>
+                <input id="arrowDown" type="radio" class="visually-hidden" name="moreLess">
+                <label for="arrowUp" class="sort__btn-arrow">
+                  <svg class="sort__icon">
+                    <use xlink:href="images/sprite.svg#icon-up-dir"></use>
+                  </svg>
+                </label>
+                <label for="arrowDown" class="sort__btn-arrow">
+                  <svg class="sort__icon">
+                    <use xlink:href="images/sprite.svg#icon-up-dir"></use>
+                  </svg>
+                </label>
               </li>
             </ul>
           </div>
           <ul class="cards">
             <li class="cards__item">
               <div class="cards__header"></div>
-              <img src="images/img-sedona.jpg.png" alt="sedona">
+              <!-- <img src="images/img-sedona.jpg.png" alt="sedona"> -->
             </li>
             <li class="cards__item">
               <div class="cards__header"></div>
@@ -160,36 +166,36 @@
             </li>
             <li class="cards__item">
               <div class="cards__header"></div>
-              <img src="images/img-barbershop.jpg.png" alt="barbershope">
+              <!-- <img src="images/img-barbershop.jpg.png" alt="barbershope"> -->
             </li>
             <li class="cards__item">
               <div class="cards__header"></div>
-              <img src="images/img-mishka.jpg.png" alt="mishka">
+              <!-- <img src="images/img-mishka.jpg.png" alt="mishka"> -->
             </li>
             <li class="cards__item">
               <div class="cards__header"></div>
-              <img src="images/img-aplus.jpg.png" alt="aplus">
+              <!-- <img src="images/img-aplus.jpg.png" alt="aplus"> -->
             </li>
             <li class="cards__item">
               <div class="cards__header"></div>
-              <img src="images/img-kvast.jpg.png" alt="kvast">
+              <!-- <img src="images/img-kvast.jpg.png" alt="kvast"> -->
             </li>
           </ul>
           <ul class="nav-page">
-            <li class="nav-page__item">
-              <a href="#">1</a>
+            <li>
+              <a href="#" class="btn btn--gray nav-page__item active">1</a>
             </li>
-            <li class="nav-page__item">
-              <a href="#">2</a>
+            <li>
+              <a href="#" class="btn btn--gray nav-page__item">2</a>
             </li>
-            <li class="nav-page__item">
-              <a href="#">3</a>
+            <li>
+              <a href="#" class="btn btn--gray nav-page__item">3</a>
             </li>
-            <li class="nav-page__item">
-              <a href="#">4</a>
+            <li>
+              <a href="#" class="btn btn--gray nav-page__item">4</a>
             </li>
-            <li class="nav-page__item">
-              <a href="#">следующая</a>
+            <li>
+              <a href="#" class="btn btn--gray nav-page__item nav-page__item--width-auto">следующая</a>
             </li>
           </ul>
         </div>

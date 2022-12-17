@@ -1,0 +1,10 @@
+.page-content {
+  display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1.5rem 8.625rem;
+	
+  &__wrap {
+		display: grid;
+		gap: 58px 0;
+  }
+}
