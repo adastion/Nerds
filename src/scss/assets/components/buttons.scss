@@ -25,7 +25,7 @@
     }
 
     &:active {
-      box-shadow: inset 0 2px 3px darken($silver, 16%);
+      box-shadow: inset 0 2px 2px darken($silver, 16%);
       color: darken($silver, 16%);
     }
   }
@@ -39,7 +39,7 @@
     }
 
     &:active {
-      box-shadow: inset 0 2px 3px darken($carnation, 16%);
+      box-shadow: inset 0 2px 2px darken($carnation, 16%);
     }
   }
 
@@ -51,7 +51,7 @@
       background: darken($caribbean_green, 9%);
     }
     &:active {
-      box-shadow: inset 0 2px 3px darken($caribbean_green, 16%);
+      box-shadow: inset 0 2px 2px darken($caribbean_green, 16%);
     }
   }
 
@@ -64,7 +64,7 @@
     }
 
     &:active {
-      box-shadow: inset 0 2px 3px darken($ronchi, 16%);
+      box-shadow: inset 0 2px 2px darken($ronchi, 16%);
     }
   }
 }

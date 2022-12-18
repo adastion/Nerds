@@ -1,4 +1,26 @@
 .filter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: -100%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: white;
+  width: 100%;
+  padding: 1.5rem;
+
+  @include tablet-and-bigger {
+    position: static;
+    width: auto;
+    display: block;
+    background: none;
+    z-index: none;
+    padding: 0;
+    transform: none;
+  }
+
   &__list {
     & > li {
       margin-bottom: 2.625rem;
