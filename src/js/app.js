@@ -3,12 +3,11 @@
 const btnMenu = document.querySelector('.header__btn-menu');
 const btnClose = document.querySelector('.modal__close');
 const menu = document.querySelectorAll('.navigation');
-const visually = document.querySelector('.show');
 
 btnMenu.addEventListener('click', (e) => {
   e.preventDefault();
   menu.forEach((element) => {
-    element.classList.toggle('show');
+    element.classList.toggle('navigation__show');
   });
 });
 
@@ -26,5 +25,10 @@ btnClose.addEventListener('click', (e) => {
   modalWriteUs.classList.remove('show');
 });
 
-// pointer on the googlle map
+// Filter button
+const filterBtn = document.querySelector('.page-content__filter-btn');
+const filterHiddenVisually = document.querySelector('.filter');
 
+filterBtn.addEventListener('click', () => {
+  filterHiddenVisually.classList.toggle('filter__active');
+});

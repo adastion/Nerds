@@ -9,33 +9,10 @@
     grid-template-columns: 1fr 2fr;
     gap: 1.5rem;
     margin-top: 3.625rem;
-  }
 
-  &::before {
-    content: 'Filter';
-    position: absolute;
-    top: -4.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    padding: 1rem 1.5rem;
-    background: $gallery;
-    border-radius: 3px;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-
-    @include tablet-and-bigger {
+    &__filter-btn {
       display: none;
     }
-  }
-
-  &:hover::before {
-    opacity: 0.5;
-  }
-
-  &:hover::before {
-    background: darken($gallery, 20%);
   }
 
   &__wrap {

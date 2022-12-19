@@ -34,6 +34,7 @@
     justify-items: center;
     gap: 2rem;
     margin-bottom: 2rem;
+    position: relative;
 
     @include desktop-and-bigger {
       display: flex;
@@ -62,17 +63,8 @@
   }
 
   &__btn-menu {
-    border: 2px solid $silver;
-    border-radius: 3px;
-    color: $pickled_bluewood_text;
-
     @include tablet-and-bigger {
       display: none;
-    }
-
-    &:hover,
-    &:focus-within {
-      background: $silver;
     }
   }
 
