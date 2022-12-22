@@ -15,7 +15,11 @@ button {
 }
 
 h2 {
-  font-size: 2.8125rem;
+  font-size: 1.8125rem;
+
+  @include phone-and-bigger {
+    font-size: 2.8125rem;
+  }
 }
 
 h3 {
