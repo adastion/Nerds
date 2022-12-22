@@ -18,30 +18,31 @@
     animation-name: filter;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    
+    @keyframes filter {
+      0% {
+        left: -100%;
+      }
+  
+      50% {
+        left: 55%;
+      }
+      100% {
+        left: 50%;
+      }
+    }
+  
+    @keyframes filterHidden {
+      0% {
+        left: 50%;
+      }
+  
+      100% {
+        left: -100%;
+      }
+    }
   }
 
-  @keyframes filter {
-    0% {
-      left: -100%;
-    }
-
-    50% {
-      left: 55%;
-    }
-    100% {
-      left: 50%;
-    }
-  }
-
-  @keyframes filterHidden {
-    0% {
-      left: 50%;
-    }
-
-    100% {
-      left: -100%;
-    }
-  }
 
   @include tablet-and-bigger {
     position: static;

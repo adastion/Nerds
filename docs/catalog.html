@@ -71,11 +71,18 @@
     </header>
     <main>
       <div class="page-content">
-        <button class="btn btn--gray page-content__filter-btn">filter</button>
+        <button class="btn btn--gray page-content__filter-btn">филтры</button>
         <form action="/" class="filter">
           <ul class="filter__list">
             <li>
               <h3 class="filter__title">СТОИМОСТЬ:</h3>
+              <ul class="range-slider">
+                <li class="range-slider__item range-slider__item--background">
+                  <div id="sliderUi"></div>
+                </li>
+                <li class="range-slider__item">От<input id="numOut1" type="number" class="range-slider__input"></li>
+                <li class="range-slider__item">До<input id="numOut2" type="number" class="range-slider__input"></li>
+              </ul>
             </li>
             <li>
               <h3 class="filter__title">Сетка:</h3>
