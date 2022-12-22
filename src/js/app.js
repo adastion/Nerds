@@ -40,7 +40,7 @@ const slider = document.getElementById('sliderUi');
 
 if (slider) {
   noUiSlider.create(slider, {
-    start: [1500, 30000],
+    start: [5200, 30000],
     connect: true,
     step: 1,
     range: {
@@ -49,8 +49,8 @@ if (slider) {
     },
   });
 
-  const inputOne = document.getElementById('input01');
-  const inputTwo = document.getElementById('input02');
+  const inputOne = document.getElementById('numOut1');
+  const inputTwo = document.getElementById('numOut2');
   const inputs = [inputOne, inputTwo];
 
   slider.noUiSlider.on('update', (values, handle) => {
