@@ -1737,9 +1737,9 @@ h2 {
   height: 10px;
 }
 
-#sort1:checked ~ li label[for=sort1],
-#sort2:checked ~ li label[for=sort2],
-#sort3:checked ~ li label[for=sort3] {
+#sort1:checked ~ ul li label[for=sort1],
+#sort2:checked ~ ul li label[for=sort2],
+#sort3:checked ~ ul li label[for=sort3] {
   opacity: 1;
 }
 
