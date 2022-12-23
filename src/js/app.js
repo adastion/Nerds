@@ -14,6 +14,12 @@ btnMenu.addEventListener('click', (e) => {
 //modal write us
 const modalBtn = document.querySelector('.contacts__btn');
 const modalWriteUs = document.querySelector('.modal');
+const modalContent = document.querySelector('.modal__content');
+
+modalWriteUs.addEventListener('click', (e) => {
+  e.preventDefault();
+  modalWriteUs.classList.remove('show');
+});
 
 modalBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -23,6 +29,10 @@ modalBtn.addEventListener('click', (e) => {
 btnClose.addEventListener('click', (e) => {
   e.preventDefault();
   modalWriteUs.classList.remove('show');
+});
+
+modalContent.addEventListener('click', (e) => {
+  e.stopPropagation();
 });
 
 // Filter button

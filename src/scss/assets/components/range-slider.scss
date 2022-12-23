@@ -22,7 +22,7 @@
   &__item--background {
     max-width: 260px;
     display: block;
-    padding: 20px 25px;
+    padding: 1.875rem 1.5rem;
 
     @include phone-and-bigger {
       grid-column: 1/3;

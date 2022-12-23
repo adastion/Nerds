@@ -606,7 +606,7 @@ h2 {
 .range-slider__item--background {
   max-width: 260px;
   display: block;
-  padding: 20px 25px;
+  padding: 1.875rem 1.5rem;
 }
 @media (min-width: 544px) {
   .range-slider__item--background {
