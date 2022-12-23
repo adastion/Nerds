@@ -867,10 +867,9 @@ h2 {
   top: -300%;
   z-index: -1;
   background: #eeeeee;
-  -webkit-animation-name: navHidden;
-          animation-name: navHidden;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-transition: top 0.5s ease-in-out;
+  -o-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
 }
 @media (min-width: 768px) {
   .navigation {
@@ -894,46 +893,12 @@ h2 {
   }
 }
 .navigation__show {
-  -webkit-animation-name: navShow;
-          animation-name: navShow;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-transition: top 0.7s ease-in;
+  -o-transition: top 0.7s ease-in;
+  transition: top 0.7s ease-in;
+  top: 100%;
   padding: 1.5rem 0;
   z-index: 10;
-}
-@-webkit-keyframes navShow {
-  50% {
-    top: 120%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-@keyframes navShow {
-  50% {
-    top: 120%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-@-webkit-keyframes navHidden {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: -300%;
-  }
-}
-@keyframes navHidden {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: -300%;
-  }
 }
 .navigation__link {
   font-weight: 500;
@@ -1533,6 +1498,10 @@ h2 {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.writeus__input--not-valid {
+  border: 2px solid #e74246;
+  color: #e74246;
+}
 .writeus__input:hover {
   opacity: 1;
 }
@@ -1609,65 +1578,21 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
+  left: -200%;
   top: 60px;
-  left: -50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
   z-index: 10;
   background: white;
   width: 100%;
   padding: 1.5rem;
-  -webkit-animation-name: filterHidden;
-          animation-name: filterHidden;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-transition: left 0.7s ease-in-out;
+  -o-transition: left 0.7s ease-in-out;
+  transition: left 0.7s ease-in-out;
 }
 .filter__active {
-  -webkit-animation-name: filter;
-          animation-name: filter;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes filter {
-  0% {
-    left: -100%;
-  }
-  50% {
-    left: 55%;
-  }
-  100% {
-    left: 50%;
-  }
-}
-@keyframes filter {
-  0% {
-    left: -100%;
-  }
-  50% {
-    left: 55%;
-  }
-  100% {
-    left: 50%;
-  }
-}
-@-webkit-keyframes filterHidden {
-  0% {
-    left: 50%;
-  }
-  100% {
-    left: -100%;
-  }
-}
-@keyframes filterHidden {
-  0% {
-    left: 50%;
-  }
-  100% {
-    left: -100%;
-  }
+  -webkit-transition: left 0.7s ease;
+  -o-transition: left 0.7s ease;
+  transition: left 0.7s ease;
+  left: 0%;
 }
 @media (min-width: 768px) {
   .filter {

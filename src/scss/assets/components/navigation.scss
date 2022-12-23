@@ -8,8 +8,7 @@
   top: -300%;
   z-index: -1;
   background: $gallery;
-  animation-name: navHidden;
-  animation-duration: 1s;
+  transition: top 0.5s ease-in-out;
 
   @include tablet-and-bigger {
     position: static;
@@ -25,31 +24,10 @@
   }
 
   &__show {
-    animation-name: navShow;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    transition: top 0.7s ease-in;
+    top: 100%;
     padding: 1.5rem 0;
     z-index: 10;
-  }
-
-  @keyframes navShow {
-    50% {
-      top: 120%;
-    }
-
-    100% {
-      top: 100%;
-    }
-  }
-
-  @keyframes navHidden {
-    0% {
-      top: 100%;
-    }
-
-    100% {
-      top: -300%;
-    }
   }
 
   &__link {

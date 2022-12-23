@@ -49,6 +49,11 @@
     opacity: 0.6;
     transition: all 0.3s ease-in-out;
 
+    &--not-valid {
+      border: 2px solid $carnation;
+      color: $carnation;
+    }
+
     &:hover {
       opacity: 1;
     }
