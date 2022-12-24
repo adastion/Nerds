@@ -22,7 +22,7 @@ import { deleteAsync } from 'del';
 // Paths
 import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
-const buildFolder = `./docs`;
+const buildFolder = `./dist`;
 const srcFolder = `./src`;
 
 const path = {
@@ -211,7 +211,7 @@ const svgSpriteBuild = () => {
         },
       }),
     )
-    .pipe(gulp.dest('docs/images/'));
+    .pipe(gulp.dest('dist/images/'));
 };
 
 function watcher() {
